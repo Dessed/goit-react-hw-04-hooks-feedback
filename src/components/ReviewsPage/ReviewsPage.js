@@ -52,7 +52,12 @@ export const ReviewsPage = () => {
             <Section title='Statistics'>
                 {total === 0 ?  
                 <Notification messsage="There is no feedback"/> :
-                <Statistics good={good} neutral={neutral} bad={bad} total={total} countPositiveFeedbackPercentage={Math.round(percentage)}/>
+                <Statistics 
+                good={good} 
+                neutral={neutral} 
+                bad={bad} 
+                total={total} 
+                countPositiveFeedbackPercentage={Math.round(percentage)}/>
                 }
             </Section>
             </>
